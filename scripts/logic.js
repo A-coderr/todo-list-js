@@ -7,4 +7,6 @@ function add(){
 
     todoList.push(name);
     console.log(todoList);
+
+    inputName.value = '';
 }
