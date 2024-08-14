@@ -1,4 +1,5 @@
 const todoList = [];
+let todoListHTML = '';
 
 function add(){
     const inputName = document.querySelector('.todo-input');
@@ -9,4 +10,9 @@ function add(){
     console.log(todoList);
 
     inputName.value = '';
+
+    for(let i = 0; i < todoList.length; i++){
+        const html = `<p>${todoList[i]}</p>`;
+        todoListHTML += html;
+    }
 }
