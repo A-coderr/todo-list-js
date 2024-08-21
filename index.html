@@ -3,12 +3,15 @@
     <head>
         <title>Todo list JS</title>
         <script src="scripts/logic.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <h1>Todo Dashboard</h1>
-        <input class="todo-input" placeholder="Todo name">
-        <input class="todo-date" type="date">
-        <button onclick="add();">Add</button>
-        <div class="todo-list todo-list-css"></div>
+        <div class="todo-input-grid">
+            <input class="todo-input name-input" placeholder="Todo name">
+            <input class="todo-date date-input" type="date">
+            <button onclick="todo_add();" class="add-button">Add</button>
+            <div class="todo-list todo-list-css"></div>
+        </div>
     </body>
 </html>
